@@ -12,11 +12,12 @@
 #Final summary including recommendations that the business should undertake
 
 #Loading packages and data 
+library(here)
 library(tidyverse)
 library(scales)
-account_info <- read.csv("da_fitly_account_info.csv")
-customer_support <- read.csv("da_fitly_customer_support.csv")
-user_activity <- read.csv("da_fitly_user_activity.csv")
+account_info <- read.csv(here("Data", "da_fitly_account_info.csv"))
+customer_support <- read.csv(here("Data", "da_fitly_customer_support.csv"))
+user_activity <- read.csv(here("Data", "da_fitly_user_activity.csv"))   
 
 ##Begin Data Cleaning
 
